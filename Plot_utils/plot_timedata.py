@@ -65,7 +65,6 @@ def load_data(filepath: str) -> np.ndarray:
 
     return np.array(rows, dtype=dtype)
 
-
 # ── 필터링 ────────────────────────────────────────────────────────────────────
 def filter_data(data: np.ndarray, ch: int | None, tag: int | None) -> np.ndarray:
     mask = np.ones(len(data), dtype=bool)
